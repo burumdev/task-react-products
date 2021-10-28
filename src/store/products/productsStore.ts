@@ -27,7 +27,7 @@ const normalizedProducts$ = rawProducts$.pipe(
 	)
 )
 
-export const listProducts$ = normalizedProducts$.pipe(
+const listProducts$ = normalizedProducts$.pipe(
 	map(prods =>
 		prods.filter(p => !p.featured)
 	)
