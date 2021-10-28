@@ -1,0 +1,310 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"name": "Egg Balloon",
+			"category": "food",
+			"price": 93.89,
+			"currency": "USD",
+			"image": "img/products/pexels-daria-shevtsova-1030870.jpg",
+			"bestseller": false,
+			"featured": false,
+			"details": null
+		},
+		{
+			"id": 2,
+			"name": "Fried Eggs",
+			"category": "food",
+			"price": 24.11,
+			"currency": "USD",
+			"image": "img/products/pexels-picjumbocom-196668.jpg",
+			"bestseller": false,
+			"featured": false,
+			"details": null
+		},
+		{
+			"id": 3,
+			"name": "Deep Fried Eggs",
+			"category": "food",
+			"price": 45.67,
+			"currency": "USD",
+			"image": "img/products/pexels-philip-warp-6729622.jpg",
+			"bestseller": true,
+			"featured": false,
+			"details": null
+		},
+		{
+			"id": 4,
+			"name": "Pizza Dough",
+			"category": "food",
+			"price": 14.77,
+			"currency": "USD",
+			"image": "img/products/pexels-shvets-production-7525198.jpg",
+			"bestseller": false,
+			"featured": false,
+			"details": null
+		},
+		{
+			"id": 5,
+			"name": "Baked Pizza Dough",
+			"category": "food",
+			"price": 53.34,
+			"currency": "USD",
+			"image": "img/products/pexels-shvets-production-7525191.jpg",
+			"bestseller": false,
+			"featured": false,
+			"details": null
+		},
+		{
+			"id": 6,
+			"name": "Pizza",
+			"category": "food",
+			"price": 99.98,
+			"currency": "USD",
+			"image": "img/products/pexels-shvets-production-7525183.jpg",
+			"bestseller": false,
+			"featured": false,
+			"details": null
+		},
+		{
+			"id": 7,
+			"name": "Syeda Kim",
+			"category": "people",
+			"price": 55.89,
+			"currency": "USD",
+			"image": {
+				"src": "img/products/pexels-nathan-cowley-1153369.jpg",
+				"alt": "Syeda Kim"
+			},
+			"bestseller": true,
+			"featured": false,
+			"details": null
+		},
+		{
+			"id": 8,
+			"name": "Kallum Pace",
+			"category": "people",
+			"price": 32.16,
+			"currency": "USD",
+			"image": {
+				"src": "img/products/pexels-norma-mortenson-8457975.jpg",
+				"alt": "Kallum Pace"
+			},
+			"bestseller": true,
+			"featured": false,
+			"details": null
+		},
+		{
+			"id": 9,
+			"name": "Lianne Hodgson",
+			"category": "people",
+			"price": 13.66,
+			"currency": "USD",
+			"image": {
+				"src": "img/products/pexels-ekrulila-8232094.jpg",
+				"alt": "Lianne Hodgson"
+			},
+			"bestseller": true,
+			"featured": false,
+			"details": null
+		},
+		{
+			"id": 10,
+			"name": "Yousaf Mercado",
+			"category": "people",
+			"price": 64.99,
+			"currency": "USD",
+			"image": {
+				"src": "img/products/pexels-lara-jameson-9623443.jpg",
+				"alt": "Yousaf Mercado"
+			},
+			"bestseller": true,
+			"featured": false,
+			"details": null
+		},
+		{
+			"id": 11,
+			"name": "Rizwan Cornish",
+			"category": "people",
+			"price": 1.23,
+			"currency": "USD",
+			"image": {
+				"src": "img/products/pexels-oliver-sjöström-1005456.jpg",
+				"alt": "Rizwan Cornish"
+			},
+			"bestseller": true,
+			"featured": false,
+			"details": null
+		},
+		{
+			"id": 12,
+			"name": "Red Bench",
+			"category": "people",
+			"price": 3.89,
+			"currency": "USD",
+			"image": {
+				"src": "img/products/pexels-надежда-мустафаева-7810812.jpg",
+				"alt": "Red Bench"
+			},
+			"bestseller": true,
+			"featured": false,
+			"details": null
+		},
+		{
+			"id": 13,
+			"name": "Chuck Norris",
+			"category": "people",
+			"price": 999,
+			"currency": "USD",
+			"image": {
+				"src": "img/products/chuck-norris-epic-guide-to-military-vehicles-desktop-2048x1152.jpg",
+				"alt": "Chuck Norris"
+			},
+			"bestseller": true,
+			"featured": false,
+			"details": null
+		},
+		{
+			"id": 14,
+			"name": "Man",
+			"category": "people",
+			"price": 100,
+			"currency": "USD",
+			"image": {
+				"src": "img/products/pexels-dmitriy-ganin-7790595.jpg",
+				"alt": "Man"
+			},
+			"bestseller": false,
+			"featured": false,
+			"details": null
+		},
+		{
+			"id": 15,
+			"name": "Taj Mahal",
+			"category": "landmarks",
+			"price": 1000,
+			"currency": "USD",
+			"dimmentions": {
+				"width": 1020,
+				"height": 1020
+			},
+			"image": "img/products/pexels-oliver-sjöström-1223648.jpg",
+			"bestseller": false,
+			"featured": false,
+			"details": null
+		},
+		{
+			"id": 16,
+			"name": "Eiffel Tower",
+			"category": "landmarks",
+			"price": 700.11,
+			"currency": "USD",
+			"dimmentions": {
+				"width": 1020,
+				"height": 1020
+			},
+			"image": "img/products/pexels-valeriia-miller-3599586.jpg",
+			"bestseller": false,
+			"featured": false,
+			"details": null
+		},
+		{
+			"id": 17,
+			"name": "Brandenburg Gate",
+			"category": "landmarks",
+			"price": 500,
+			"currency": "USD",
+			"dimmentions": {
+				"width": 1020,
+				"height": 1020
+			},
+			"image": "img/products/pexels-ana-maria-4965133.jpg",
+			"bestseller": false,
+			"featured": false,
+			"details": null
+		},
+		{
+			"id": 18,
+			"name": "Barn",
+			"category": "landmarks",
+			"price": 20.30,
+			"currency": "USD",
+			"dimmentions": {
+				"width": 1020,
+				"height": 1020
+			},
+			"image": "img/products/pexels-pixabay-533769.jpg",
+			"bestseller": false,
+			"featured": false,
+			"details": null
+		},
+		{
+			"id": 19,
+			"name": "Shed",
+			"category": "landmarks",
+			"price": 10.20,
+			"currency": "USD",
+			"dimmentions": {
+				"width": 1020,
+				"height": 1020
+			},
+			"image": "img/products/pexels-david-bartus-610294.jpg",
+			"bestseller": false,
+			"featured": false,
+			"details": null
+		},
+		{
+			"id": 20,
+			"name": "Architecture",
+			"category": "landmarks",
+			"price": 101,
+			"currency": "USD",
+			"dimmentions": {
+				"width": 1020,
+				"height": 1020
+			},
+			"image": "img/products/pexels-tatiana-syrikova-3933020.jpg",
+			"bestseller": false,
+			"featured": false,
+			"details": null
+		},
+		{
+			"id": 21,
+			"name": "Samurai Queen Wrestling",
+			"category": "landmarks",
+			"price": 101,
+			"currency": "USD",
+			"image": {
+				"src": "img/products/Sumo-1.jpg",
+				"alt": "Samurai Queen Wrestling"
+			},
+			"bestseller": false,
+			"featured": true,
+			"details": {
+				"dimmentions": {
+					"width": 1020,
+					"height": 1020
+				},
+				"size": 15000,
+				"description": [
+					"So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely scrambled part of Cicero's De Finibus in order to provide placeholder text to mockup various fonts for a type specimen book.So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely scrambled part of Cicero's De Finibus in order to provide placeholder",
+					"text to mockup various fonts for a type specimen book.So how did the classical Latin become so incoherent? According to McClintock."
+				],
+				"recommendations": [
+					{
+						"src": "img/products/aid4476649-v4-1200px-Fight-with-a-Bo-Staff-Step-10-Version-3.jpg",
+						"alt": "Bo Staff"
+					},
+					{
+						"src": "img/products/Antique_Japanese_katana.jpeg",
+						"alt": "Katana"
+					},
+					{
+						"src": "img/products/NUNCHAKU-CLASSIC-IN-LEGNO-MARRONE-SCURO-extra-big-20238-325.jpg",
+						"alt": "Nunchaku"
+					}
+				]
+			}
+		}
+	]
+}

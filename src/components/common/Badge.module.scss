@@ -1,0 +1,34 @@
+
+.Badge {
+	position: absolute;
+	background: #fff;
+	padding: 0.5rem;
+	z-index: 1;
+	pointer-events: none;
+}
+
+.BadgeBottomLeft {
+	bottom: 0;
+}
+
+.BadgeBottomRight {
+	bottom: 0;
+	right: 0;
+}
+
+.BadgeBig {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 1rem 2rem;
+}
+
+.BadgeSmall {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 0.1rem;
+}
+
+.BadgeBlack {
+	background: #000;
+	color: #fff;
+}

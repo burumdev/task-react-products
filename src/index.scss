@@ -1,0 +1,41 @@
+
+//kinda reset
+body {
+  margin: 0;
+  font-family: 'Archivo', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+}
+
+* {
+	outline: none;
+	box-sizing: border-box;
+}
+
+//common stuff
+.heading-midsize {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.heading-big {
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.gray-medium {
+	color: #656565;
+}
+
+.text-right {
+	text-align: right;
+}

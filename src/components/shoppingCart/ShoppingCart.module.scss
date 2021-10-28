@@ -1,0 +1,59 @@
+
+.ShoppingCart {
+	position: relative;
+}
+
+.ShoppingCartButton {
+	position: relative;
+}
+
+.ShoppingCartContentsContainer {
+	position: absolute;
+	border: 4px solid #e4e4e4;
+	background-color: #fff;
+	padding: 0.6rem;
+	top: 64px;
+	right: 0;
+	z-index: 2;
+	padding: 2rem 1rem;
+}
+
+.ShoppingCartContents {
+    margin-top: 24px;
+	max-height: 400px;
+    overflow-y: auto;
+}
+
+.ShoppingCartSpacer {
+	margin: 24px 0;
+	border-bottom: 1px solid #C2C2C2;
+}
+
+.CartCloseButton {
+	position: absolute;
+    top: 14px;
+    right: 15px;
+}
+
+.CartClearButton {
+	border: 3px solid #000;
+}
+
+@media only screen and (max-width: 600px) {
+	.ShoppingCartButton img {
+		width: 32px;
+	}
+
+	.ShoppingCart {
+		position: static;
+	}
+
+	.ShoppingCartContentsContainer {
+		width: 100%;
+		top: 100px;
+	}
+
+	.ShoppingCartContents {
+		max-height: 250px;
+	}
+}

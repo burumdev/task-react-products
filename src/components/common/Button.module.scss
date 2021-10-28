@@ -1,0 +1,43 @@
+
+.Button {
+	background-color: #000;
+	color: #fff;
+	border: 0;
+	cursor: pointer;
+	font-size: 23px;
+	padding: 0.5rem 2rem;
+}
+
+.ButtonWhite {
+	background-color: #fff;
+	color: #000;
+}
+
+.ButtonTransparentBox {
+	background-color: transparent;
+	color: #000;
+	padding: 0 0.4rem;
+}
+
+.ButtonHalfOpacity {
+	opacity: 0.5;
+}
+
+.ButtonHidden {
+	visibility: hidden;
+}
+
+.ButtonAbsolute {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.ButtonStretch {
+	width: 100%;
+}
+
+.ButtonIcon {
+	font-size: 0;
+}

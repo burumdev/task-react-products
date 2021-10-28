@@ -1,0 +1,27 @@
+
+.Checkbox {
+	cursor: pointer;
+	display: flex;
+}
+
+.CheckboxIcon {
+	position: relative;
+	width: 23px;
+	height: 23px;
+	img {
+		position: absolute;
+		object-fit: cover;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+	}
+}
+
+.CheckboxText {
+	font-size: 22px;
+	color: #1d1d1d;
+	margin-left: 23px;
+	user-select: none;
+}

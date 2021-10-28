@@ -1,0 +1,16 @@
+
+.ProductsSorter {
+	width: 200px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 22px;
+	span {
+		color: #9B9B9B;
+	}
+	select {
+		font-size: inherit;
+		border: 0;
+		background-color: transparent;
+	}
+}
