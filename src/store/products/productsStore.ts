@@ -58,22 +58,23 @@ export const filterSortedProducts$ = listProducts$.pipe(
 		const { categories, priceRange } = filterConf;
 		const { asc, sorter } = sorterConf;
 
-		const catProds = prods.filter(p => {
-			return categories.length === 0 ? true : categories.includes(p.category)
-		});
-		const filteredProds = catProds.filter(p => {
-			return priceRange === null ? true : (p.price >= priceRange[0] && p.price < priceRange[1])
-		})
-
-		if (sorter === 'name') {
-			filteredProds.sort((a, b) => {
-				return ((a.name < b.name) ? -1 : ((a.name > b.name) ? 1 : 0));
-			});
-		} else if (sorter === 'price') {
-			filteredProds.sort((a, b) => {
-				return ((a.price < b.price) ? -1 : ((a.price > b.price) ? 1 : 0));
+		let catProds = prods;
+		if (categories.length > 0) {
+			catProds = prods.filter(p => {
+				return categories.includes(p.category)
 			});
 		}
+
+		let filteredProds = catProds;
+		if (priceRange !== null) {
+			filteredProds = catProds.filter(p => {
+				return (p.price >= priceRange[0] && p.price < priceRange[1])
+			})
+		}
+
+		filteredProds.sort((a, b) => {
+			return ((a[sorter] < b[sorter]) ? -1 : ((a[sorter] > b[sorter]) ? 1 : 0));
+		});
 
 		if (!asc) {
 			filteredProds.reverse();

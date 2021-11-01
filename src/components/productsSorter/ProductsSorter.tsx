@@ -7,6 +7,7 @@ import s from './ProductsSorter.module.scss';
 
 //types
 import { IProductsSorterProps } from './ProductsSorter.types';
+import { IProductSorterConf } from '../../store/products/products.types';
 
 //store
 import { productSorterConf$ } from '../../store/products/productsStore';
@@ -16,7 +17,7 @@ import Button from '../common/Button';
 
 const ProductsSorter: React.FC<IProductsSorterProps> = () => {
 	//state
-	const sorterConf = useObservableState(productSorterConf$, {
+	const sorterConf = useObservableState<IProductSorterConf>(productSorterConf$, {
 		asc: true,
 		sorter: 'name'
 	});
