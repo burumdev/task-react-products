@@ -14,10 +14,11 @@ import Paginator from '../common/Paginator';
 //styles
 import s from './ProductsList.module.scss';
 
+const PAG_PER_PAGE = 6;
+
 const ProductsList: React.FC<IProductsListProps> = ({
 	forceShowCartButtons = false
 }) => {
-	const pagPerPage = 6;
 	//state
 	const [paginationStep, setPaginationStep] = useState(1);
 	const products = useObservableState(filterSortedProducts$, []);
@@ -33,14 +34,15 @@ const ProductsList: React.FC<IProductsListProps> = ({
 		}
 	}
 
+	//effect
 	useEffect(() => {
 		setPaginationStep(1);
 	}, [prodFilters]);
 
 	//memo
 	const paginatedProducts = useMemo(() => {
-		const startIndex = paginationStep === 1 ? 0 : (paginationStep - 1) * pagPerPage;
-		return products.slice(startIndex, startIndex + pagPerPage);
+		const startIndex = paginationStep === 1 ? 0 : (paginationStep - 1) * PAG_PER_PAGE;
+		return products.slice(startIndex, startIndex + PAG_PER_PAGE);
 	}, [paginationStep, products]);
 
 	return (
@@ -57,7 +59,7 @@ const ProductsList: React.FC<IProductsListProps> = ({
 			<Paginator
 				currentStep={paginationStep}
 				totalItems={products.length}
-				perPage={pagPerPage}
+				perPage={PAG_PER_PAGE}
 				onChangeStep={onPaginatorChangeStep}
 			/>
 		</div>

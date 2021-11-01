@@ -18,7 +18,7 @@ import Button from '../common/Button';
 const ProductsSorter: React.FC<IProductsSorterProps> = () => {
 	//state
 	const sorterConf = useObservableState<IProductSorterConf>(productSorterConf$, {
-		asc: true,
+		isAsc: true,
 		sorter: 'name'
 	});
 
@@ -27,7 +27,7 @@ const ProductsSorter: React.FC<IProductsSorterProps> = () => {
 		productSorterConf$.next(
 			{
 				...sorterConf,
-				asc: !sorterConf.asc
+				isAsc: !sorterConf.isAsc
 			}
 		);
 	}
@@ -51,8 +51,8 @@ const ProductsSorter: React.FC<IProductsSorterProps> = () => {
 			/>
 			<span>Sort By</span>
 			<select onChange={onChangeSorter}>
-				<option value='name'>{sorterConf.asc ? 'A-Z' : 'Z-A'}</option>
-				<option value='price'>{`Price ${sorterConf.asc ? '<' : '>'}`}</option>
+				<option value='name'>{sorterConf.isAsc ? 'A-Z' : 'Z-A'}</option>
+				<option value='price'>{`Price ${sorterConf.isAsc ? '<' : '>'}`}</option>
 			</select>
 		</div>
 	)

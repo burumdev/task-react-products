@@ -15,7 +15,7 @@ export const productFilterConf$ = new BehaviorSubject<IProductFilterConf>({
 	priceRange: null
 });
 export const productSorterConf$ = new BehaviorSubject<IProductSorterConf>({
-	asc: true,
+	isAsc: true,
 	sorter: 'name'
 });
 export const cartProductIds$ = new BehaviorSubject<number[]>([]);
@@ -56,27 +56,21 @@ export const filterSortedProducts$ = listProducts$.pipe(
 	combineLatestWith(productFilterConf$, productSorterConf$),
 	map(([prods, filterConf, sorterConf]) => {
 		const { categories, priceRange } = filterConf;
-		const { asc, sorter } = sorterConf;
+		const { isAsc, sorter } = sorterConf;
 
-		let catProds = prods;
-		if (categories.length > 0) {
-			catProds = prods.filter(p => {
-				return categories.includes(p.category)
-			});
-		}
+		const catProds = prods.filter(p => {
+			return categories.length === 0 ? true : categories.includes(p.category)
+		});
 
-		let filteredProds = catProds;
-		if (priceRange !== null) {
-			filteredProds = catProds.filter(p => {
-				return (p.price >= priceRange[0] && p.price < priceRange[1])
-			})
-		}
+		const filteredProds = catProds.filter(p => {
+			return priceRange === null ? true : (p.price >= priceRange[0] && p.price < priceRange[1])
+		})
 
 		filteredProds.sort((a, b) => {
 			return ((a[sorter] < b[sorter]) ? -1 : ((a[sorter] > b[sorter]) ? 1 : 0));
 		});
 
-		if (!asc) {
+		if (!isAsc) {
 			filteredProds.reverse();
 		}
 

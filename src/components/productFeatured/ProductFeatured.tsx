@@ -86,7 +86,7 @@ const ProductFeatured: React.FC<IProductFeaturedProps> = () => {
 							<div className={s.ProductFeaturedDetails}>
 								<h4 className='heading-midsize'>Details</h4>
 								<p className='gray-medium'>Size: {`${featuredProduct.details?.dimmentions.width} x ${featuredProduct.details?.dimmentions.height} pixel`}</p>
-								<p className='gray-medium'>Size: 15 mb</p>
+								<p className='gray-medium'>Size: {`${featuredProduct.details?.size} mb`}</p>
 							</div>
 						</div>
 					</div>

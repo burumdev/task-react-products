@@ -10,6 +10,7 @@ import { ICheckboxProps } from './Checkbox.types';
 const Checkbox: React.FC<ICheckboxProps> = ({
 	cbText = '',
 	isChecked = false,
+	//Getting functions in props to avoid scope confusion
 	...props
 }) => {
 	//funcs

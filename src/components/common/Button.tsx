@@ -17,7 +17,8 @@ const Button: React.FC<IButtonProps> = ({
 	isAbsolute = false,
 	isStrech = false,
 	isIcon = false,
-	onClick
+	//Getting functions in props to avoid scope confusion
+	...props
 }) => {
 	//classnames
 	const cx = cn.bind(s);
@@ -32,7 +33,7 @@ const Button: React.FC<IButtonProps> = ({
 	})
 
 	return (
-		<button onClick={e => onClick(e)} className={buttonClasses}>
+		<button onClick={e => props.onClick(e)} className={buttonClasses}>
 			{buttonInner}
 		</button>
 	)

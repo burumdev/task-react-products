@@ -41,6 +41,6 @@ export interface IProductFilterConf {
 }
 
 export interface IProductSorterConf {
-	asc: boolean;
+	isAsc: boolean;
 	sorter: 'name' | 'price';
 }
